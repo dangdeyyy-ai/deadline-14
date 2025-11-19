@@ -1,7 +1,24 @@
 @media only screen and (max-width: 660px) {
+    .mobile {
+        display: block;
+    }
+    .header {
+        .logo {
+            font-size: 24px;
+        }
+    }
     .hero {
+        .top-text {
+            .text {
+                text-transform: lowercase;
+            }
+        }
         .small-text {
             max-width: 247px;
+        }
+        .arrow {
+            width: 5px;
+            height: 9px;
         }
     }
     .section1 {
@@ -9,7 +26,13 @@
         .container {
             .left-content {
                 width: auto;
+                .arrow {
+                    width: 5px;
+                    height: 9px;
+                }
                 .content {
+                    display: flex;
+                    justify-content: end;
                     .img {
                         width: 322.61px;
                         min-height: 288.57px;
@@ -63,7 +86,7 @@
         }
     }
     .section4 {
-        margin-top: 50px;
+        margin-top: 70px;
         .container {
             gap: 52px;
         }
@@ -83,7 +106,7 @@
                     }
                     .button {
                         width: auto;
-                        padding: 17px 30px;
+                        padding: 17px 38px;
                         font-size: 16px;
                     }
                 }

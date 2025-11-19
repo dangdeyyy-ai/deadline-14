@@ -30,7 +30,7 @@ body {
     width: 65%;
     height: 100%;
     background-image: linear-gradient(
-            to bottom,
+            to top,
             rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.3)
         ),
@@ -42,7 +42,7 @@ body {
 }
 
 .header {
-    max-width: 1200px;
+    max-width: 1180px;
     width: 95%;
     margin: 0 auto;
     padding: 40px 0 0 0;
@@ -87,7 +87,7 @@ body {
 }
 
 .hero {
-    max-width: 1200px;
+    max-width: 1180px;
     width: 95%;
     margin: 106px auto 0 auto;
     .top-text {
@@ -161,11 +161,12 @@ body {
 .section1 {
     margin-top: 100px;
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
         width: 95%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
         .left-content {
             display: flex;
             flex-direction: column;
@@ -241,6 +242,7 @@ body {
                     max-width: 192px;
                     width: 100%;
                     height: 202px;
+                    object-fit: cover;
                 }
             }
             .text-column {
@@ -296,7 +298,7 @@ body {
 .section2 {
     margin-top: 100px;
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
         width: 95%;
         margin: 0 auto;
         .title {
@@ -435,7 +437,7 @@ body {
 .section3 {
     margin-top: 100px;
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
         width: 95%;
         margin: 0 auto;
         display: flex;
@@ -520,7 +522,7 @@ body {
 .section4 {
     margin-top: 100px;
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
         width: 95%;
         margin: 0 auto;
         display: flex;
@@ -538,6 +540,7 @@ body {
             justify-content: space-between;
             align-items: center;
             gap: 5px;
+            opacity: 80%;
             .box {
                 background-color: #f6f6f6;
                 border: 1px solid #c8e6c9;
@@ -589,7 +592,7 @@ body {
     background-color: #465564;
     padding: 54px 0;
     .container {
-        max-width: 1200px;
+        max-width: 1180px;
         width: 95%;
         margin: 0 auto;
         .top-footer {
@@ -663,6 +666,9 @@ hr {
     border: 1px solid #4caf50;
     margin: 23px 0 43px 0;
 }
+.mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 1180px) {
     .section1 {
@@ -686,7 +692,7 @@ hr {
                 }
                 .text-column {
                     position: absolute;
-                    top: 100px;
+                    top: 103px;
                     flex-direction: row;
                     justify-content: center;
                     max-width: 100%;
@@ -707,11 +713,13 @@ hr {
                             font-size: 14px;
                         }
                         .link {
-                            margin-top: 3px;
+                            margin-top: 0;
                             gap: 19px;
                             height: 20px;
                             .text {
                                 font-size: 14px;
+                                height: 20px;
+                                line-height: 20px;
                             }
                         }
                     }
